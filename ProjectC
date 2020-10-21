@@ -1,0 +1,199 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace ProjectC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string characterName = "John";
+            int characterAge = 35;
+
+
+
+
+            Console.WriteLine("There once was a man called " + characterName);
+            Console.WriteLine("He was " + characterAge + " years old");
+            Console.WriteLine("He really liked name " + characterName);
+            Console.WriteLine("But did not like being " + characterAge + "");
+
+            Console.WriteLine("Giraffe\nAcademy");
+
+            Console.WriteLine(5 + 8);
+
+            Console.WriteLine(Math.Round(56.9));
+
+
+            //Console.Write("Enter Your Name : ");
+            //string name = Console.ReadLine();
+
+            //Console.Write("Enter Your Age : ");
+            //string age = Console.ReadLine();
+
+
+            //Console.WriteLine("Hello " + name + " you are " + age );
+
+            int num = Convert.ToInt32("45");
+            Console.WriteLine(num + 6);
+
+
+            //Console.Write("Enter a Number: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter Anbther Number:  ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write(num1 + num2);
+
+
+
+            //Mad Lib Game//
+
+            //string color, pluralNoun, celebrity;
+
+            //Console.Write("Enter a color ");
+            //color = Console.ReadLine();
+
+            //Console.Write("Enter a plural noun ");
+            //pluralNoun = Console.ReadLine();
+
+            //Console.Write("Enter a celebrity ");
+            //celebrity = Console.ReadLine();
+
+
+            //Console.WriteLine("Roses are " + color);
+            //Console.WriteLine(pluralNoun + " are blue");
+            //Console.WriteLine("I love " + celebrity);
+
+            //Arrays//
+
+            int[] luckyNumbers = { 4, 8, 24, 16, 42 };
+            string[] friends = new string[5];
+
+            friends[0] = "Jim";
+            friends[2] = "Kelly";
+
+            luckyNumbers[1] = 900;
+
+            Console.WriteLine(luckyNumbers[1]);
+
+            //Conditions//
+
+            bool isMale = false;
+            bool isTall = false;
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male");
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a short male");
+            } else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are not a male but you are tall");
+            }
+
+            else
+            {
+                Console.WriteLine("You are not male or not tall");
+            }
+
+
+
+            //Calculator//
+
+
+            //Console.Write("Enter a number");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.Write("Enter Operator");
+            //string op = Console.ReadLine();
+
+            //Console.Write("Enter a number");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
+
+            //if (op == "+")
+            //{
+            //    Console.WriteLine(num1 + num2);
+            //} else if (op == "-")
+            //{
+            //    Console.WriteLine(num1 - num2);
+            //}
+            //else if (op == "/")
+            //{
+            //    Console.WriteLine(num1 -/ num2);
+            //}
+            //else if (op == "*")
+            //{
+            //    Console.WriteLine(num1 * num2);
+            //}
+
+            //else
+            //{
+            //    Console.WriteLine("Invaliud Operator");
+
+
+            //While Loop//
+
+            int index = 1;
+            while (index <= 5)
+            {
+                Console.WriteLine(index);
+                index++;
+            }
+
+
+            //Guessing Game//
+
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 5;
+            bool outOfGuesses = false;
+
+            while (guess != secretWord && ! outOfGuesses)
+            {
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter Guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+
+
+            }
+
+            if(outOfGuesses)
+            {
+                Console.Write("You Lose");
+            }
+            else
+            {
+                Console.Write("You Win");
+            }
+
+
+            //For Loop//
+
+            for(int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+                Console.ReadLine();
+                Console.ReadLine();
+            }
+        }
+    }
+    
+
+
